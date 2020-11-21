@@ -1,1 +1,1 @@
-# simple-drag-and-drop
+# basic-project-structure

@@ -1,0 +1,38 @@
+{
+  "name": "reacttimer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development --watch",
+    "start": " webpack-dev-server --open --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.3",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "babel-preset-es2015": "^6.24.1",
+    "file-loader": "^6.1.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.2.0"
+  }
+}
