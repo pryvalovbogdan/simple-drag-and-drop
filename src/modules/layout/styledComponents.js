@@ -66,17 +66,22 @@ export const DrugNDropWrapper = styled.div`
 export const DrugNDropGroup = styled.div`
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   font-size: 25px;
   border: 3px solid palevioletred;
   flex-direction: column;
   width: 250px;
   padding: 5px;
   margin-right: 5px;
-  background: darkslateblue;
   border-radius: 15px;
   padding-right: 10px;
   min-height: 200px;
+  //background: ${({ isDragging }) => isDragging ? 'deepskyblue' : 'darkslateblue'};
+  transition: 2s;
+  background-image: ${({ isDragging }) => isDragging ? 
+  'radial-gradient(circle, #092c89, #004198, #0055a3, #0068ad, #247bb5)' : 
+  'radial-gradient(circle, #0a0a63, #130962, #1a0761, #1f065f, #24055e)'};
+ 
 `;
 
 
@@ -86,10 +91,11 @@ export const DrugNDropItem = styled.div`
   align-content: center;
   text-align: center;
   font-size: 25px;
-  width: 100%;
   border-radius: 15px;
   margin-bottom: 3px;
+  
+  width: 50%;
   padding: 2px;
-  background: ${({ isDragging }) => isDragging ? 'orange' : 'cadetblue'};
+  color: ${({ isDragging }) => isDragging ? 'orange' : 'white'};
   transition: 2s;
 `;
